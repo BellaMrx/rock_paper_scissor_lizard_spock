@@ -26,7 +26,7 @@ span {
 .container-fluid {
 	width: 100%;
 	height: auto;
-	margin-top: ;
+	/* margin-top: ; */
 	text-align: center;
 }
 
@@ -48,10 +48,25 @@ span {
 	height: auto;
 }
 
-.fa-solid {
-	color: black;
-	font-size: 3rem;
+/* versteckt bild nach klick */
+.hidden {
+	display: none;
 }
+
+.fa {
+	font-size: 5rem;
+}
+
+.icon-player .fa-hand-back-fist {
+	rotate: 90deg;
+}
+
+.icon-com .fa-hand-back-fist {
+	rotate: -90deg;
+}
+
+
+
 
 .chooseFighter {
 	font-size: 1.5rem;

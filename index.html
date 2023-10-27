@@ -4,17 +4,17 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="google" content="notranslate">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
 		<link href="assets/fontawesome/css/brands.css" rel="stylesheet">
 		<link href="assets/fontawesome/css/solid.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="styles/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<title>book-of-coding.com - Rock, Paper, Scissors, Lizard, Spock</title>
 	</head>
 	<body>
-		<h1>Rock <i class="fa-solid fa-hand-back-fist"></i>, Paper, Scissor, Lizard, Spock</h1>
+		<h1>Rock, Paper<i class="fa fa-hand"></i>, Scissor, Lizard, Spock</h1>
 		<div class="score">
 			<span id="user-score">0</span><span>:</span><span id="computer-score">0</span>
 		</div>
@@ -22,7 +22,8 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<p class="textPlayerComputer">PLAYER</p>
-					<img id="displayPlayerChoice" class="startDisplayImage fa-solid" src="images/RPSlS_Rules.PNG">
+					<img id="displayPlayerChoice" class="startDisplayImage" src="images/RPSlS_Rules.PNG">
+					<i id="iconPlayer" class="fa icon-player"></i>
 					<p class="chooseFighter">Choose your fighter!</p>
 					<button id="rock" onclick="btnRock()">Rock</button>
 					<button id="paper" onclick="btnPaper()">Paper</button>
@@ -34,10 +35,11 @@
 				<div class="col-sm-6">
 					<p class="textPlayerComputer">COMPUTER</p>
 					<img id="displayComputerChoice" class="startDisplayImage" src="images/RPSlS_Rules.PNG">
+					<i id="iconCom" class="fa icon-com"></i>
 					<p id="textResultDrawLoseWin" class="startTextDrawLoseWinDisplay"><strong>Let's go</strong></p>
 				</div>
 			</div>
 		</div>
-	<script src="scripts/script.js"></script>
+	<script src="scripts/script2.js"></script>
 	</body>
 </html>
