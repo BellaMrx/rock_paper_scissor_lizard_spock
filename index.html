@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="google" content="notranslate">
+		<link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+		<link href="assets/fontawesome/css/brands.css" rel="stylesheet">
+		<link href="assets/fontawesome/css/solid.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="styles/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<title>book-of-coding.com - Rock, Paper, Scissors, Lizard, Spock</title>
+	</head>
+	<body>
+		<h1>Rock <i class="fa-solid fa-hand-back-fist"></i>, Paper, Scissor, Lizard, Spock</h1>
+		<div class="score">
+			<span id="user-score">0</span><span>:</span><span id="computer-score">0</span>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6">
+					<p class="textPlayerComputer">PLAYER</p>
+					<img id="displayPlayerChoice" class="startDisplayImage fa-solid" src="images/RPSlS_Rules.PNG">
+					<p class="chooseFighter">Choose your fighter!</p>
+					<button id="rock" onclick="btnRock()">Rock</button>
+					<button id="paper" onclick="btnPaper()">Paper</button>
+					<button id="scissor" onclick="btnScissor()">Scissors</button>
+					<br>
+					<button id="lizard" onclick="btnLizard()">Lizard</button>
+					<button id="spock" onclick="btnSpock()">Spock</button>
+				</div>
+				<div class="col-sm-6">
+					<p class="textPlayerComputer">COMPUTER</p>
+					<img id="displayComputerChoice" class="startDisplayImage" src="images/RPSlS_Rules.PNG">
+					<p id="textResultDrawLoseWin" class="startTextDrawLoseWinDisplay"><strong>Let's go</strong></p>
+				</div>
+			</div>
+		</div>
+	<script src="scripts/script.js"></script>
+	</body>
+</html>
