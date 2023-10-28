@@ -5,27 +5,43 @@
   --primary-color-2: #00ff33;
   --primary-color-2-darkest: color-mix(in srgb,var(--primary-color-2),#000 15%);
   --primary-color-3: #999;
+  --primary-color-4: #fff;
 }
 
 * {
 	box-sizing: border-box;
 }
 body {
-	cursor: pointer;
-	background-color: #f8f8ff;
+	color: var(--primary-color-4);
+	background-color: var(--primary-color-1);
 }
+
 h1 {
-	margin: 4rem;
-	font-size: 3rem;
-	font-family: Verdana, Helvetica, sans-serif;
+	margin: 0.5rem 1rem; /* change */
+	padding: 0.5em 1em;	/* change */
+	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
+}
+h1 i {
+	font-size: 1.5rem !important; /* change */
+}
+.website-link {
+	font-size: 1.5rem; /* change */
+	text-align: center;
+	display: block;
+	color: var(--primary-color-2);
+	cursor: pointer;
+}
+.website-link:hover {
+	text-decoration: none;
+	color: var(--primary-color-4);
+	text-shadow: 2px 2px 4px var(--primary-color-4);
 }
 .score {
 	text-align: center;
 }
 span {
-	font-size: 4rem;
-	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 2.5rem; /* change */
 }
 .container-fluid {
 	width: 100%;
@@ -38,24 +54,27 @@ span {
 	display: inline-block;
 }
 .textPlayerComputer {
-	font-size: 1.5rem;
-	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 1.5rem; /* change */
 }
 .startDisplayImage {
 	margin-top: 1.25rem;
 	margin-bottom: 2rem;
-	width: 30%;
+	width: 80%; /* change */
 	height: auto;
+}
+.startTextDrawLoseWinDisplay {
+	border: 2px solid var(--primary-color-4);
+	border-radius: 2px;
+	font-size: 2.5rem; /* change */
 }
 /* hidden image after click */
 .hidden {
 	display: none;
 }
-
 .fa {
-	margin-top: 1.25rem;
-	margin-bottom: 2rem;
-	font-size: 15rem;
+	margin-top: 0.5rem; /* change */
+	margin-bottom: 0.5rem; /* change */
+	font-size: 10rem; /* change */
 }
 .icon-player .fa-hand-back-fist {
 	rotate: 90deg;
@@ -108,24 +127,25 @@ span {
 .dropdown {
 	text-align: center;
 	display: block;
-	width: max-content;
+	width: 80%; /* change */
 	margin-left: auto;
 	margin-right: auto;
+	cursor: pointer;
 }
 .dropdown p {
 	border: 2px solid var(--primary-color-3);
 	border-radius: 2px;
-	font-size: 1.5rem;
-	color: #fff;
+	font-size: 1.2rem; /* change */
+	color: var(--primary-color-4);
 	background-color: var(--primary-color-3);
-	padding: 10px;
+	padding: 3px; /* change */
 } 
 .dropdown-content {
 	display: none;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: var(--primary-color-1);
+	background-color: var(--primary-color-3);
 	box-shadow: 0px 8px 16px 0px #00000033;
 	border: 2px solid var(--primary-color-2);
 } 
@@ -136,37 +156,35 @@ span {
 	text-align: center;
 }
 .imageRule {
-	background-color: var(--primary-color-1);
+	background-color: var(--primary-color-3);
 	width: 50%;
 }
 
 .chooseFighter {
-	font-size: 1.5rem;
-	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 1.3rem; /* change */
 }
 button {
 	height: 2.5rem;
 	width: 5.5rem;
-	color: white;
 	font-size: 1rem;
-	font-family: Verdana, Helvetica, sans-serif;
 	margin-bottom: 2rem;
-	background-color: #000;
-	border-radius: 0.313rem;
-	box-shadow: 0 0.563rem #999;
+	border: 1.5px solid var(--primary-color-3);     
+	border-radius: 4px;
+	background-color: var(--primary-color-1);
+	box-shadow: 2px 2px var(--primary-color-3);
+	cursor: pointer;
 }
 button:hover {
-	background-color: #3e8e41;
+	font-size: 1.2rem;
+	color: var(--primary-color-1);
+	background-color: var(--primary-color-2);
 }
 button:active {
-	background-color: #3e8e41;
-	box-shadow: 0 0.4rem #666;
+	background-color: var(--primary-color-2);
+	box-shadow: none;
 	transform: translateY(0.25rem);
 }	
-.startTextDrawLoseWinDisplay {
-	font-size: 1.5rem;
-	font-family: Verdana, Helvetica, sans-serif;
-}
+
 /* animation shake hand*/	
 @keyframes shake {
 	0% {
@@ -195,5 +213,122 @@ button:active {
 	}
 	100% {
 		transform: translateY(0px);
+	}
+}
+
+/*-----------------------------------------------------   
+    Tablet version from 640 pixel                          
+    640px / 16px/em = 40em  
+------------------------------------------------------*/
+@media screen and (min-width: 40em) {
+	h1 {
+		margin: 2rem;
+		font-size: 2.5rem;
+	}
+	h1 i {
+		font-size: 2rem !important;
+	}
+	.website-link {
+		font-size: 1.8rem;
+	}
+	span {
+		font-size: 3rem;
+	}
+	.textPlayerComputer {
+		font-size: 1.8rem;
+	}
+
+	.startDisplayImage {
+		width: 30%;  /* ? */
+	}
+	.startTextDrawLoseWinDisplay {
+		border: 2px solid var(--primary-color-4);
+		border-radius: 2px;
+		font-size: 3.2rem; /* change */
+	}
+	.fa {
+		margin-top: 1rem;
+		margin-bottom: 1.5rem;
+		font-size: 9rem;
+	}
+	.dropdown {
+		width: max-content;
+	}
+	.dropdown p {
+		font-size: 1.3rem;
+		padding: 4px;
+	} 	
+	.chooseFighter {
+		font-size: 1.3rem;
+	}
+	button {
+		height: 2.3rem;
+		width: 6rem;
+		font-size: 1.3rem;
+		margin-bottom: 1.8rem;   
+		border-radius: 3px;
+	}
+	button:hover {
+		font-size: 1.3rem;
+	}
+}
+
+/*------------------------------------------------------------------
+    Screens from 1024 pixels                         
+    1024px / 16px/em = 64em	
+------------------------------------------------------------------- */
+@media screen and (min-width: 64em) {
+	h1 {
+		margin: 4rem;
+		font-size: 3rem;
+	}
+	h1 i {
+		font-size: 2.5rem !important;
+	}
+	.website-link {
+		font-size: 2rem;
+	}
+	span {
+		font-size: 4rem;
+	}
+	.textPlayerComputer {
+		font-size: 2rem;
+	}
+
+	.startDisplayImage {
+		width: 30%;
+	}
+	.startTextDrawLoseWinDisplay {
+		border: 1px solid var(--primary-color-4);
+		border-radius: 2px;
+		font-size: 3.3rem;
+		width: 60%; 
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.fa {
+		margin-top: 1.25rem;
+		margin-bottom: 2rem;
+		font-size: 15rem;
+	}
+	.dropdown {
+		width: max-content;
+	}
+	.dropdown p {
+		font-size: 1.5rem;
+		padding: 5px;
+	} 	
+	.chooseFighter {
+		font-size: 1.5rem;
+	}
+	button {
+		height: 2.5rem;
+		width: 6.5rem;
+		font-size: 1.5rem;
+		margin-bottom: 2rem;   
+		border-radius: 4px;
+	}
+	button:hover {
+		font-size: 1.5rem;
 	}
 }
