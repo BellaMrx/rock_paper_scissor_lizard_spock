@@ -14,15 +14,23 @@
 		<title>book-of-coding.com - Rock, Paper, Scissors, Lizard, Spock</title>
 	</head>
 	<body>
-		<h1>Rock, Paper<i class="fa fa-hand"></i>, Scissor, Lizard, Spock</h1>
+		<h1>Rock, Paper, Scissor, Lizard, Spock</h1>
 		<div class="score">
 			<span id="user-score">0</span><span>:</span><span id="computer-score">0</span>
 		</div>
 		<div class="container-fluid">
 			<div class="row">
+
+				<div class="dropdown">
+					<p>Rules <i class="fa-solid fa-hand-pointer"></i></p>
+					<div class="dropdown-content">
+						<img src="images/RPSlS_Rules.PNG" class="imageRule">
+					</div>
+				</div>
+
 				<div class="col-sm-6">
 					<p class="textPlayerComputer">PLAYER</p>
-					<img id="displayPlayerChoice" class="startDisplayImage" src="images/RPSlS_Rules.PNG">
+					<img id="displayPlayerStartImage" class="startDisplayImage" src="images/RPSlS_Rules.PNG">
 					<i id="iconPlayer" class="fa icon-player"></i>
 					<p class="chooseFighter">Choose your fighter!</p>
 					<button id="rock" onclick="btnRock()">Rock</button>
@@ -34,12 +42,12 @@
 				</div>
 				<div class="col-sm-6">
 					<p class="textPlayerComputer">COMPUTER</p>
-					<img id="displayComputerChoice" class="startDisplayImage" src="images/RPSlS_Rules.PNG">
+					<img id="displayComStartImage" class="startDisplayImage" src="images/RPSlS_Rules.PNG">
 					<i id="iconCom" class="fa icon-com"></i>
 					<p id="textResultDrawLoseWin" class="startTextDrawLoseWinDisplay"><strong>Let's go</strong></p>
 				</div>
 			</div>
 		</div>
-	<script src="scripts/script2.js"></script>
+	<script src="scripts/script.js"></script>
 	</body>
 </html>
